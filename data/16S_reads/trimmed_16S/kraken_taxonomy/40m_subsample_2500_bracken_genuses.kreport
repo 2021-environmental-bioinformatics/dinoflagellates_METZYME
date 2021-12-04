@@ -1,0 +1,32 @@
+100.00	1838	0	R	1	root
+100.00	1838	0	D	3	  Bacteria
+73.94	1359	0	P	1500	    Cyanobacteria
+73.94	1359	0	C	44560	      Cyanobacteriia
+73.94	1359	0	O	44827	        Synechococcales
+73.94	1359	0	F	44828	          Cyanobiaceae
+68.15	1252	1252	G	44830	            Prochlorococcus MIT9313
+1.56	28	28	G	44829	            Cyanobium PCC-6307
+4.23	77	77	G	44831	            Synechococcus CC9902
+17.61	323	0	P	44430	    Bdellovibrionota
+17.61	323	0	C	44431	      Bdellovibrionia
+17.07	313	0	O	44438	        Bdellovibrionales
+17.07	313	0	F	44439	          Bdellovibrionaceae
+17.07	313	313	G	44441	            OM27 clade
+0.55	10	0	O	44432	        Bacteriovoracales
+0.55	10	0	F	44433	          Bacteriovoracaceae
+0.55	10	10	G	44437	            uncultured
+4.41	81	0	P	45909	    Myxococcota
+4.41	81	0	C	45910	      Myxococcia
+4.41	81	0	O	45911	        Myxococcales
+4.41	81	0	F	45915	          Myxococcaceae
+4.41	81	81	G	45925	            P3OB-42
+2.23	40	0	P	2375	    Proteobacteria
+2.23	40	0	C	2379	      Alphaproteobacteria
+2.23	40	0	O	2557	        Rhodobacterales
+2.23	40	0	F	2558	          Rhodobacteraceae
+2.23	40	40	G	2666	            uncultured
+1.81	33	0	P	46016	    Planctomycetota
+1.81	33	0	C	46071	      Planctomycetes
+1.81	33	0	O	46089	        Pirellulales
+1.81	33	0	F	46090	          Pirellulaceae
+1.81	33	33	G	46100	            Rhodopirellula
