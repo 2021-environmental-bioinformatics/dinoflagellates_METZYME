@@ -1,0 +1,85 @@
+100.00	2168	0	R	1	root
+99.54	2158	0	D	3	  Bacteria
+51.64	1120	0	P	2375	    Proteobacteria
+41.40	897	0	C	3303	      Gammaproteobacteria
+17.59	381	0	O	3709	        Pseudomonadales
+16.23	352	0	F	3718	          Pseudomonadaceae
+16.23	352	352	G	3723	            Pseudomonas
+1.36	29	0	F	50470	          Spongiibacteraceae
+1.36	29	29	G	50471	            BD1-7 clade
+12.48	270	0	O	46449	        Enterobacterales
+8.94	193	0	F	50237	          Alteromonadaceae
+8.94	193	193	G	50242	            Alteromonas
+3.54	76	0	F	50319	          Pseudoalteromonadaceae
+3.54	76	76	G	50321	            Pseudoalteromonas
+11.33	245	0	O	46187	        Burkholderiales
+9.70	210	0	F	46220	          Burkholderiaceae
+9.70	210	210	G	46230	            Ralstonia
+1.62	35	0	F	46403	          Rhodocyclaceae
+1.62	35	35	G	46414	            Denitromonas
+10.24	222	0	C	2379	      Alphaproteobacteria
+5.45	118	0	O	2808	        SAR11 clade
+5.45	118	0	F	26228	          Clade I
+5.45	118	118	G	26229	            Clade Ia
+2.86	62	0	O	2667	        Rhodospirillales
+2.86	62	0	F	26178	          Magnetospiraceae
+2.35	50	50	G	26182	            uncultured
+0.51	11	11	G	26179	            Magnetospira
+1.93	41	0	O	2386	        Caulobacterales
+1.93	41	0	F	2387	          Caulobacteraceae
+1.93	41	41	G	2391	            Caulobacter
+15.58	338	0	P	1500	    Cyanobacteria
+15.58	338	0	C	44560	      Cyanobacteriia
+15.58	338	0	O	44827	        Synechococcales
+15.58	338	0	F	44828	          Cyanobiaceae
+15.58	338	338	G	44830	            Prochlorococcus MIT9313
+7.36	159	0	P	43868	    Bacteroidota
+7.36	159	0	C	43869	      Bacteroidia
+6.34	137	0	O	44160	        Flavobacteriales
+6.34	137	0	F	44183	          Flavobacteriaceae
+6.34	137	137	G	44221	            Flavobacterium
+1.02	22	0	O	44004	        Chitinophagales
+1.02	22	0	F	44044	          Saprospiraceae
+1.02	22	22	G	44055	            uncultured
+6.07	131	0	P	44430	    Bdellovibrionota
+6.07	131	0	C	44431	      Bdellovibrionia
+6.07	131	0	O	44438	        Bdellovibrionales
+6.07	131	0	F	44439	          Bdellovibrionaceae
+6.07	131	131	G	44441	            OM27 clade
+6.00	130	0	P	45976	    Nitrospinota
+6.00	130	0	C	45978	      Nitrospinia
+6.00	130	0	O	45979	        Nitrospinales
+6.00	130	0	F	45980	          Nitrospinaceae
+4.94	107	107	G	45982	            Nitrospina
+1.07	23	23	G	45981	            LS-NOB
+5.03	109	0	P	46698	    Verrucomicrobiota
+5.03	109	0	C	46771	      Verrucomicrobiae
+4.32	93	0	O	46829	        Verrucomicrobiales
+4.32	93	0	F	46833	          Rubritaleaceae
+4.32	93	93	G	46838	            Roseibacillus
+0.71	15	0	O	46791	        Opitutales
+0.71	15	0	F	46801	          Puniceicoccaceae
+0.71	15	15	G	46806	            MB11C04 marine group
+4.32	93	0	P	43279	    Actinobacteriota
+4.32	93	0	C	43280	      Acidimicrobiia
+4.32	93	0	O	43295	        Microtrichales
+4.32	93	0	F	43302	          Microtrichaceae
+4.32	93	93	G	43305	            Sva0996 marine group
+1.81	39	0	P	46016	    Planctomycetota
+0.97	21	0	C	46071	      Planctomycetes
+0.97	21	0	O	46089	        Pirellulales
+0.97	21	0	F	46090	          Pirellulaceae
+0.97	21	21	G	46107	            uncultured
+0.84	18	0	C	46033	      Phycisphaerae
+0.84	18	0	O	46047	        Phycisphaerales
+0.84	18	0	F	46049	          Phycisphaeraceae
+0.84	18	18	G	46060	            uncultured
+1.72	37	0	P	45909	    Myxococcota
+1.72	37	0	C	45910	      Myxococcia
+1.72	37	0	O	45911	        Myxococcales
+1.72	37	0	F	45915	          Myxococcaceae
+1.72	37	37	G	45925	            P3OB-42
+0.46	10	0	D	2	  Archaea
+0.46	10	0	P	43131	    Thermoplasmatota
+0.46	10	0	C	43132	      Thermoplasmata
+0.46	10	10	G	43142	        Marine Group III
