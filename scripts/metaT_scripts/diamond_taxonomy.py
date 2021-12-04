@@ -7,7 +7,7 @@ import glob
 os.chdir('/vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/data/metaT_trimmed_reads/fasta_files/paired/mRNA')
 
 #Adjust this depending on which files you want to attach taxonomy to
-diamond_files = ['30B8Z_S11_001_40m_mRNA_diamond_faa_out', '30B90_S12_001_70m_mRNA_diamond_faa_out', '30B91_S28_001_380m_mRNA_diamond_faa_out'] 
+diamond_files=['dino_metzyme_annotated_coassembly_diamond_out']
 
 full_col_names = ['Query ID', 'Subject ID', 'Percentage of identical matches', 'Alignment length', 'Number of mismatches', 'Number of gap openings', 'Start of alignment in query', 'End of alignment in query', 'Start of alignment in subject', 'End of alignment in subject','Expected value', 'Bit score']
 
