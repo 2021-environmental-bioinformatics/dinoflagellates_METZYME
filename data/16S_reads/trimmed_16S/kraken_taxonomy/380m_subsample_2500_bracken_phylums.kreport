@@ -1,0 +1,21 @@
+100.00	2446	0	R	1	root
+96.40	2358	0	D	3	  Bacteria
+52.40	1282	0	P	1500	    Cyanobacteria
+23.42	573	0	P	2375	    Proteobacteria
+9.34	228	0	P	43868	    Bacteroidota
+5.11	124	0	P	44430	    Bdellovibrionota
+2.42	59	0	P	46698	    Verrucomicrobiota
+2.17	53	0	P	44898	    Desulfobacterota
+0.60	14	0	P	46016	    Planctomycetota
+0.50	12	12	P	11409	    Marinimicrobia (SAR406 clade)
+0.45	10	10	P	46586	    SAR324 clade(Marine group B)
+3.11	76	0	D	4	  Eukaryota
+2.53	61	0	D1	8770	    SAR
+2.53	61	0	D2	8771	      Alveolata
+0.97	23	0	P	9217	        Dinoflagellata
+0.90	21	0	P	9360	        Protalveolata
+0.66	16	0	P	8848	        Ciliophora
+0.57	14	0	D1	6365	    Haptophyta
+0.57	14	0	P	6372	      Prymnesiophyceae
+0.49	12	0	D	2	  Archaea
+0.49	12	0	P	43131	    Thermoplasmatota
