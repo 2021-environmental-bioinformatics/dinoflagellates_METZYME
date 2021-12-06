@@ -1448,10 +1448,10 @@ Run `conda activate python_jupyter`
 
 Allocate an interactive job on the HPC with 
 `srun -p compute --ntasks-per-node=1 --time=4:00:00 --mem=50G --pty bash` and set up a Jupyter Notebook session with `jupyter notebook --no-browser --port=8888`
-
+```
 - `metaT_taxonomy.ipynb` links the output of the Diamond taxonomic classification with the PhyloDB taxonomy, so that it can be used for creating plots of relative community abundance. The outputs are two TSVs: One with the full taxonomic classification for all ORFs, and one filtered by just dinoflagellate ORFs. These outputs are used in all other Jupyter Notebooks and should be run first.
 
 - `Reclassify_transcripts_for_relative_abundance.ipynb` splits up the full taxonomic tables into individual TSVs for different taxa used by Cohen et al. It can be modified depending on what level of taxonomic classification the reader is interested in. The outputs of this notebook are used for `community-abundance_from_transcripts.ipynb` to plot relative community abundance for both the eukaryotic and whole communities. 
 
 - `community-abundance_from_transcripts.ipynb` takes the output of the reclassify_transcripts notebook and the output of the BWA alignment to calculate the total number of transcripts that map to each taxa of interest and normalizes it by the total number of transcripts to get relative community abundance. This relative abundance is plotted for both the eukaryotic and whole communities.
-```
+
