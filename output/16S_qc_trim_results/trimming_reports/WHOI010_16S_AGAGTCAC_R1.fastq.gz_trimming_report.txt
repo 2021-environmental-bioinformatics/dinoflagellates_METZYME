@@ -1,0 +1,91 @@
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: WHOI010_16S_AGAGTCAC_R1.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.7
+Cutadapt version: 2.6
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Using smallRNA adapter for trimming (count: 57). Second best hit was Illumina (count: 1)
+Adapter sequence: 'TGGAATTCTCGG' (Illumina small RNA adapter; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Optional adapter 2 sequence (only used for read 2 of paired-end files): 'GATCGTCGGACT'
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 18 bp
+Running FastQC on the data once trimming has completed
+Output file will be GZIP compressed
+
+
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -j 1 -e 0.1 -q 20 -O 1 -a TGGAATTCTCGG WHOI010_16S_AGAGTCAC_R1.fastq.gz
+Processing reads on 1 core in single-end mode ...
+Finished in 0.53 s (26 us/read; 2.31 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  20,403
+Reads with adapters:                    16,597 (81.3%)
+Reads written (passing filters):        20,403 (100.0%)
+
+Total basepairs processed:     5,847,539 bp
+Quality-trimmed:                  20,377 bp (0.3%)
+Total written (filtered):      5,742,533 bp (98.2%)
+
+=== Adapter 1 ===
+
+Sequence: TGGAATTCTCGG; Type: regular 3'; Length: 12; Trimmed: 16597 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 0.9%
+  C: 10.5%
+  G: 85.6%
+  T: 3.0%
+  none/other: 0.0%
+WARNING:
+    The adapter is preceded by "G" extremely often.
+    The provided adapter sequence could be incomplete at its 3' end.
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	14557	5100.8	0	14557
+2	951	1275.2	0	951
+3	569	318.8	0	569
+4	4	79.7	0	4
+5	3	19.9	0	3
+62	1	0.0	1	0 1
+75	1	0.0	1	0 1
+80	3	0.0	1	0 3
+104	1	0.0	1	0 1
+111	1	0.0	1	0 1
+115	4	0.0	1	0 4
+120	1	0.0	1	0 1
+122	1	0.0	1	0 1
+123	1	0.0	1	0 1
+124	1	0.0	1	0 1
+125	2	0.0	1	0 2
+126	11	0.0	1	0 11
+127	4	0.0	1	0 4
+128	5	0.0	1	0 5
+129	45	0.0	1	4 41
+130	352	0.0	1	42 310
+131	71	0.0	1	9 62
+132	1	0.0	1	0 1
+134	1	0.0	1	0 1
+135	4	0.0	1	0 4
+211	1	0.0	1	1
+224	1	0.0	1	1
+
+
+WARNING:
+    One or more of your adapter sequences may be incomplete.
+    Please see the detailed output above.
+
+RUN STATISTICS FOR INPUT FILE: WHOI010_16S_AGAGTCAC_R1.fastq.gz
+=============================================
+20403 sequences processed in total
+
