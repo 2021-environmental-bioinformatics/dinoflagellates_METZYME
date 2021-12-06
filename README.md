@@ -1,6 +1,5 @@
 # dinoflagellates_METZYME
 
-<<<<<<< HEAD
 We chose the paper “Dinoflagellates alter their carbon and nutrient metabolic strategies across environmental gradients in the central Pacific Ocean” by Cohen et al. We propose to reanalyze the meta- genomic and transcriptomic data to regenerate the bar plots of relative community abundance shown in Figures 1b and 1c, “Protistan community composition across the METZYME transect”. We will also re-annotate the metatranscriptomic data to recreate the TPM-normalized gene expression heat map shown in Figure 3a, “Distinct dinoflagellate functional metabolism between the euphotic and mesopelagic zones of the central Pacific". The metatranscriptomic and 16S and 18S rRNA metabarcoding data generated for this paper was from 42 seawater samples collected for biomass at 7 sites and between 3 and 13 depths per site, with the majority between 40 and 600m. To simplify the analysis, we will focus on Station 9, which has samples from three different depths (40m, 70m, and 380m). This dataset is multi-pronged and stored in many different repositories: the Proteome Xchange Consortium, Ocean Protein Portal, NSF’s Biological and Chemical Oceanography Data Management Office, and NCBI, though we had to get the data from one of the author. The dataset is approximately 15Gb. 
 
 Cohen, Natalie R., Matthew R. McIlvin, Dawn M. Moran, Noelle A. Held, Jaclyn K. Saunders, Nicholas J. Hawco, Michael Brosnahan et al. "Dinoflagellates alter their carbon and nutrient metabolic strategies across environmental gradients in the central Pacific Ocean." Nature Microbiology 6, no. 2 (2021): 173-186.
@@ -1449,8 +1448,7 @@ Allocate an interactive job on the HPC with
 
 
 
-=======
 We chose the paper “Dinoflagellates alter their carbon and nutrient metabolic strategies across environmental gradients in the central Pacific Ocean” by Cohen et al. We propose to reanalyze the meta- genomic and transcriptomic data to regenerate the bar plots of relative community abundance shown in Figures 1b and 1c, “Protistan community composition across the METZYME transect”. We will also re-annotate the metatranscriptomic data to recreate the TPM-normalized gene expression heat map shown in Figure 3a, “Distinct dinoflagellate functional metabolism between the euphotic and mesopelagic zones of the central Pacific''. The metatranscriptomic and 16S and 18S rRNA metabarcoding data generated for this paper was from 42 seawater samples collected for biomass at 7 sites and between 3 and 13 depths per site, with the majority between 40 and 600m. To simplify the analysis, we will focus on Station 9, which has samples from three different depths. This dataset is multi-pronged and stored in many different repositories: the Proteome Xchange Consortium, Ocean Protein Portal, NSF’s Biological and Chemical Oceanography Data Management Office, and NCBI, resulting in approximately 350Gb of data. 
 
 Cohen, Natalie R., Matthew R. McIlvin, Dawn M. Moran, Noelle A. Held, Jaclyn K. Saunders, Nicholas J. Hawco, Michael Brosnahan et al. "Dinoflagellates alter their carbon and nutrient metabolic strategies across environmental gradients in the central Pacific Ocean." Nature Microbiology 6, no. 2 (2021): 173-186.
->>>>>>> da753572a7d948c64ab489d51f289eaa080154b3
+
