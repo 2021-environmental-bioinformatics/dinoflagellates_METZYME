@@ -5,7 +5,7 @@ We chose the paper “Dinoflagellates alter their carbon and nutrient metabolic 
 Cohen, Natalie R., Matthew R. McIlvin, Dawn M. Moran, Noelle A. Held, Jaclyn K. Saunders, Nicholas J. Hawco, Michael Brosnahan et al. "Dinoflagellates alter their carbon and nutrient metabolic strategies across environmental gradients in the central Pacific Ocean." Nature Microbiology 6, no. 2 (2021): 173-186.
 
 Data availability
-————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+——————————————————————————————————————————————
 The data is available at the following links:
 
 Metatranscriptomic reads: https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA555787
@@ -17,7 +17,7 @@ located under Biosample accession numbers:  SAMN12332710–SAMN12332751
 Metatranscriptome processing
 
 Merging forward and reverse MetaT reads then Removing rRNA reads from MetaT with SortMeRNA 4.2.0
-————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+————————————————————————————————————————————————————————————————————————————————————————————————
 Programs: SortMeRNA 4.2.0
 
 Metatranscriptome QC - did not QC this data; all are fasta (.fna) files
