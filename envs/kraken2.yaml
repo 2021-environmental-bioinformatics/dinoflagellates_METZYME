@@ -1,0 +1,10 @@
+name: kraken2
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - kraken2=2.1.2
+  - krakentools
+  - bracken
+prefix: /vortexfs1/home/kaabbott/.conda/envs/kraken2

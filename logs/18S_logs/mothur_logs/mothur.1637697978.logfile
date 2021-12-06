@@ -1,0 +1,255 @@
+Linux version
+
+Using ReadLine
+
+Using Boost
+
+Running 64Bit Version
+
+mothur v.1.40.4
+Last updated: 11/23/2021
+by
+Patrick D. Schloss
+
+Department of Microbiology & Immunology
+
+University of Michigan
+http://www.mothur.org
+
+When using, please cite:
+Schloss, P.D., et al., Introducing mothur: Open-source, platform-independent, community-supported software for describing and comparing microbial communities. Appl Environ Microbiol, 2009. 75(23):7537-41.
+
+Distributed under the GNU General Public License
+
+Type 'help()' for information on the commands that are available
+
+For questions and analysis support, please visit our forum at https://www.mothur.org/forum
+
+Type 'quit()' to exit program
+
+Interactive Mode
+
+
+
+mothur > classify.seqs(fasta=WHOI010_V9_S94_L001_380m_merged.fasta, count=WHOI010_V9_S94_L001_380m_final.count_table, reference=/vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/Protist_Ribosomal_reference_db_18S/pr2_version_4.14.0_SSU_mothur.fasta, taxonomy=/vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/Protist_Ribosomal_reference_db_18S/pr2_version_4.14.0_SSU_mothur.tax)
+Unable to open WHOI010_V9_S94_L001_380m_final.count_table. Trying default /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/WHOI010_V9_S94_L001_380m_final.count_table.
+Unable to open /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/WHOI010_V9_S94_L001_380m_final.count_table. Trying mothur's executable location /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/WHOI010_V9_S94_L001_380m_final.count_table.
+Unable to open /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/WHOI010_V9_S94_L001_380m_final.count_table.
+
+Using 36 processors.
+Reading template taxonomy...     DONE.
+Reading template probabilities...     DONE.
+It took 139 seconds get probabilities. 
+Classifying sequences from WHOI010_V9_S94_L001_380m_merged.fasta ...
+[WARNING]: M00436_250_000000000-B2LGJ_1_1113_21742_21445 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1113_21742_21445 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2104_2886_19086 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1110_26361_17385 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2105_3613_10363 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1110_25069_17930 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1114_4238_20617 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1113_8549_17647 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1114_4238_20617 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1113_8549_17647 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2113_5390_20155 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2113_5390_20155 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2107_27391_14755 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1101_16882_10091 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1101_16882_10091 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1113_18051_17759 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1113_18051_17759 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1113_21051_17794 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1112_13804_14204 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1112_13804_14204 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1101_8517_4472 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1113_9142_17920 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1109_21499_15347 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1113_9142_17920 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1109_21499_15347 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2114_8713_17822 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1113_25643_8872 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1101_20126_17591 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2114_8713_17822 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1101_24441_10375 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1113_25643_8872 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1101_24441_10375 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2113_17968_20815 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2113_17968_20815 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2112_10297_4677 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2110_8316_10411 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2112_10297_4677 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1113_18251_13926 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2113_7795_13497 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2110_8316_10411 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1113_18251_13926 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2113_7795_13497 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2112_18751_6100 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2101_23487_16443 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2101_23487_16443 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2113_15471_21213 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2110_3996_14180 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2110_12640_20132 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2110_12640_20132 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2112_19612_7286 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2110_14408_20840 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2112_19612_7286 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1112_28017_15010 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2110_19833_20965 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1101_5542_22315 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1110_12279_22896 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1101_5542_22315 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1110_12279_22896 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1101_17179_6391 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1101_17179_6391 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1112_18963_10470 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2101_25560_16894 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1114_8641_7615 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1112_20357_10647 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1110_24481_24123 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1114_8641_7615 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2101_10810_17124 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2113_29486_15027 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1114_8102_22422 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1101_5684_22787 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1114_8119_22424 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1110_17428_26854 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1113_27088_14623 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2101_6093_7502 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2101_5505_23963 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2101_6093_7502 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1110_18295_7839 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1112_9692_15678 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1112_9692_15678 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1112_6346_15799 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2101_9984_8082 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1112_6346_15799 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2101_9984_8082 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2114_16481_20585 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1111_19363_6049 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2114_16481_20585 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2101_24915_17739 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1113_13785_10943 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2101_24915_17739 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1113_3294_19436 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1112_10199_15821 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1113_3294_19436 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1112_10199_15821 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1114_4605_13846 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1112_10217_15826 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1112_13475_2036 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2113_15908_7888 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2113_14617_16498 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2113_14617_16498 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1112_7528_15886 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1113_23037_4621 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1101_3904_11893 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1113_23037_4621 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1101_3904_11893 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1111_15627_14188 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1101_11675_23987 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1111_19735_19725 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1111_15627_14188 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1101_11675_23987 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1111_19735_19725 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1111_8735_14229 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1111_8735_14229 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1110_25585_11491 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1110_25585_11491 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1101_22956_8043 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1111_22403_14269 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1114_20691_18592 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2101_12747_9007 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2101_12747_9007 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1114_16369_18616 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2114_11778_22047 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1114_29270_14381 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1110_18090_11790 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2101_3741_13424 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1114_9827_9854 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1105_19968_21665 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2114_11778_22047 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1114_29270_14381 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2112_7603_12194 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1114_5441_14447 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2112_7603_12194 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1114_5441_14447 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1114_20210_14586 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1106_22400_7322 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1114_18047_10090 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1114_18047_10090 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1114_18094_10100 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1114_18094_10100 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1113_14728_26392 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1113_14728_26392 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2101_2887_19348 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2101_7682_9571 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2101_2887_19348 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2101_7682_9571 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1101_15428_12684 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2101_20322_9606 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1101_15428_12684 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2101_20322_9606 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1102_7816_17359 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2114_16053_24364 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1102_7816_17359 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1113_29175_12284 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1110_25633_14323 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1110_25633_14323 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2114_9059_24747 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1110_12360_14857 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2114_9059_24747 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1101_19262_16336 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1102_11806_17469 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1113_27594_12570 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2111_2328_18422 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2111_2328_18422 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1112_3735_17509 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1110_27320_15285 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1112_10606_13361 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2112_16274_20700 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1112_3735_17509 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1112_10606_13361 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2112_16274_20700 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2112_11901_20745 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1112_19843_7712 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2112_11901_20745 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1107_13978_15130 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1113_12061_12911 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1113_12061_12911 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2114_10343_16288 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_2114_10343_16288 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1114_22914_25741 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1114_22914_25741 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1112_8641_13668 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1110_25011_16962 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1112_8641_13668 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1110_25011_16962 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1101_15877_20794 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+[WARNING]: M00436_250_000000000-B2LGJ_1_1108_2842_17996 could not be classified. You can use the remove.lineage command with taxon=unknown; to remove such sequences.
+It took 33 secs to classify 6538 sequences.
+
+
+[WARNING]: mothur reversed some your sequences for a better classification.  If you would like to take a closer look, please check WHOI010_V9_S94_L001_380m_merged.0_SSU_mothur.wang.flip.accnos for the list of the sequences.
+
+It took 33 secs to classify 6538 sequences.
+
+
+It took 1 secs to create the summary file for 6538 sequences.
+
+
+Output File Names: 
+WHOI010_V9_S94_L001_380m_merged.0_SSU_mothur.wang.taxonomy
+WHOI010_V9_S94_L001_380m_merged.0_SSU_mothur.wang.tax.summary
+WHOI010_V9_S94_L001_380m_merged.0_SSU_mothur.wang.flip.accnos
+
+
+mothur > quit()
+
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<^>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<^>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<^>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Detected 186 [WARNING] messages, please review.
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<^>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<^>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<^>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

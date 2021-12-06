@@ -1,0 +1,7 @@
+name: mothur_1.46.1
+channels:
+  - bioconda
+  - defaults
+dependencies:
+  - mothur
+prefix: /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1

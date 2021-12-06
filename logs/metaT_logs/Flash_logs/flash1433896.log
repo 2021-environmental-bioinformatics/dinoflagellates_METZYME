@@ -1,0 +1,95 @@
+[FLASH] Starting FLASH v1.2.11
+[FLASH] Fast Length Adjustment of SHort reads
+[FLASH]  
+[FLASH] Input files:
+[FLASH]     30B8Z_S11_001.unpaired_trimmed_1_40m.fastq
+[FLASH]     30B8Z_S11_001.unpaired_trimmed_2_40m.fastq
+[FLASH]  
+[FLASH] Output files:
+[FLASH]     /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/data/metaT_trimmed_reads/merged_reads_flash/30B8Z_S11_001_40m_merged.extendedFrags.fastq
+[FLASH]     /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/data/metaT_trimmed_reads/merged_reads_flash/30B8Z_S11_001_40m_merged.notCombined_1.fastq
+[FLASH]     /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/data/metaT_trimmed_reads/merged_reads_flash/30B8Z_S11_001_40m_merged.notCombined_2.fastq
+[FLASH]     /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/data/metaT_trimmed_reads/merged_reads_flash/30B8Z_S11_001_40m_merged.hist
+[FLASH]     /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/data/metaT_trimmed_reads/merged_reads_flash/30B8Z_S11_001_40m_merged.histogram
+[FLASH]  
+[FLASH] Parameters:
+[FLASH]     Min overlap:           10
+[FLASH]     Max overlap:           65
+[FLASH]     Max mismatch density:  0.250000
+[FLASH]     Allow "outie" pairs:   false
+[FLASH]     Cap mismatch quals:    false
+[FLASH]     Combiner threads:      36
+[FLASH]     Input format:          FASTQ, phred_offset=33
+[FLASH]     Output format:         FASTQ, phred_offset=33
+[FLASH]  
+[FLASH] Starting reader and writer threads
+[FLASH] Starting 36 combiner threads
+[FLASH] Processed 25000 read pairs
+[FLASH] Processed 50000 read pairs
+[FLASH] Processed 62326 read pairs
+[FLASH] ERROR: Input files do not contain the same number of reads
+[FLASH] FLASH did not complete successfully; exiting with failure status (1)
+[FLASH] Starting FLASH v1.2.11
+[FLASH] Fast Length Adjustment of SHort reads
+[FLASH]  
+[FLASH] Input files:
+[FLASH]     30B90_S12_001.unpaired_trimmed_1_70m.fastq
+[FLASH]     30B90_S12_001.unpaired_trimmed_2_70m.fastq
+[FLASH]  
+[FLASH] Output files:
+[FLASH]     /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/data/metaT_trimmed_reads/merged_reads_flash/30B90_S12_001_70m_merged.extendedFrags.fastq
+[FLASH]     /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/data/metaT_trimmed_reads/merged_reads_flash/30B90_S12_001_70m_merged.notCombined_1.fastq
+[FLASH]     /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/data/metaT_trimmed_reads/merged_reads_flash/30B90_S12_001_70m_merged.notCombined_2.fastq
+[FLASH]     /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/data/metaT_trimmed_reads/merged_reads_flash/30B90_S12_001_70m_merged.hist
+[FLASH]     /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/data/metaT_trimmed_reads/merged_reads_flash/30B90_S12_001_70m_merged.histogram
+[FLASH]  
+[FLASH] Parameters:
+[FLASH]     Min overlap:           10
+[FLASH]     Max overlap:           65
+[FLASH]     Max mismatch density:  0.250000
+[FLASH]     Allow "outie" pairs:   false
+[FLASH]     Cap mismatch quals:    false
+[FLASH]     Combiner threads:      36
+[FLASH]     Input format:          FASTQ, phred_offset=33
+[FLASH]     Output format:         FASTQ, phred_offset=33
+[FLASH]  
+[FLASH] Starting reader and writer threads
+[FLASH] Starting 36 combiner threads
+[FLASH] Processed 25000 read pairs
+[FLASH] Processed 50000 read pairs
+[FLASH] Processed 75000 read pairs
+[FLASH] Processed 88794 read pairs
+[FLASH] ERROR: Input files do not contain the same number of reads
+[FLASH] FLASH did not complete successfully; exiting with failure status (1)
+[FLASH] Starting FLASH v1.2.11
+[FLASH] Fast Length Adjustment of SHort reads
+[FLASH]  
+[FLASH] Input files:
+[FLASH]     30B91_S28_001.unpaired_trimmed_1_380m_.fastq
+[FLASH]     30B91_S28_001.unpaired_trimmed_2_380m.fastq
+[FLASH]  
+[FLASH] Output files:
+[FLASH]     /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/data/metaT_trimmed_reads/merged_reads_flash/30B91_S28_001_380m_merged.extendedFrags.fastq
+[FLASH]     /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/data/metaT_trimmed_reads/merged_reads_flash/30B91_S28_001_380m_merged.notCombined_1.fastq
+[FLASH]     /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/data/metaT_trimmed_reads/merged_reads_flash/30B91_S28_001_380m_merged.notCombined_2.fastq
+[FLASH]     /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/data/metaT_trimmed_reads/merged_reads_flash/30B91_S28_001_380m_merged.hist
+[FLASH]     /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/data/metaT_trimmed_reads/merged_reads_flash/30B91_S28_001_380m_merged.histogram
+[FLASH]  
+[FLASH] Parameters:
+[FLASH]     Min overlap:           10
+[FLASH]     Max overlap:           65
+[FLASH]     Max mismatch density:  0.250000
+[FLASH]     Allow "outie" pairs:   false
+[FLASH]     Cap mismatch quals:    false
+[FLASH]     Combiner threads:      36
+[FLASH]     Input format:          FASTQ, phred_offset=33
+[FLASH]     Output format:         FASTQ, phred_offset=33
+[FLASH]  
+[FLASH] Starting reader and writer threads
+[FLASH] Starting 36 combiner threads
+[FLASH] Processed 25000 read pairs
+[FLASH] Processed 50000 read pairs
+[FLASH] ERROR: [FLASH] Processed 70581 read pairs
+Input files do not contain the same number of reads
+[FLASH] FLASH did not complete successfully; exiting with failure status (1)
+[FLASH] ERROR: 

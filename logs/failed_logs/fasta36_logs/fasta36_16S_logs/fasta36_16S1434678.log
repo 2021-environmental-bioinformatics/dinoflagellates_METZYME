@@ -1,0 +1,13 @@
+
+***[fasta36]  cannot open library WHOI040_16S_TCGACGAG_40m_merged.fasta***
+
+***[fasta36]  cannot open library WHOI040_16S_TCGACGAG_40m_merged.fasta***
+
+***[fasta36]  cannot open library WHOI020_16S_TCGACGAG_70m_merged.fasta***
+
+***[fasta36]  cannot open library WHOI020_16S_TCGACGAG_70m_merged.fasta***
+
+***[fasta36]  cannot open library WHOI010_16S_AGAGTCAC_380m_merged.fasta***
+
+***[fasta36]  cannot open library WHOI010_16S_AGAGTCAC_380m_merged.fasta***
+mv: target ‘/vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/data/16S_reads/merged_16S/taxonomy’ is not a directory

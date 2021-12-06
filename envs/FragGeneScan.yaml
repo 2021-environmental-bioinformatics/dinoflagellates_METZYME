@@ -1,0 +1,7 @@
+name: FragGeneScan
+channels:
+  - bioconda
+  - defaults
+dependencies:
+  - fraggenescan
+prefix: /vortexfs1/home/selkassas/.conda/envs/FragGeneScan

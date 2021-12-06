@@ -1,0 +1,56 @@
+Linux version
+
+Using ReadLine
+
+Using Boost
+
+Running 64Bit Version
+
+mothur v.1.40.4
+Last updated: 11/23/2021
+by
+Patrick D. Schloss
+
+Department of Microbiology & Immunology
+
+University of Michigan
+http://www.mothur.org
+
+When using, please cite:
+Schloss, P.D., et al., Introducing mothur: Open-source, platform-independent, community-supported software for describing and comparing microbial communities. Appl Environ Microbiol, 2009. 75(23):7537-41.
+
+Distributed under the GNU General Public License
+
+Type 'help()' for information on the commands that are available
+
+For questions and analysis support, please visit our forum at https://www.mothur.org/forum
+
+Type 'quit()' to exit program
+
+Batch Mode
+
+
+mothur > mothur > classify.seqs(fasta=WHOI021-V9_S105_L001_40m_merged.fasta, count=WHOI021-V9_S105_L001_40m_final.count_table, reference=/vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/Protist_Ribosomal_reference_db_18S/pr2_version_4.14.0_SSU_mothur.fasta.gz, taxonomy=/vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/Protist_Ribosomal_reference_db_18S/pr2_version_4.14.0_SSU_mothur.tax.gz)
+[ERROR]: Invalid command.
+[ERROR]: did not complete mothur > classify.seqs.
+
+mothur > mothur > classify.seqs(fasta=WHOI040-V9_S124_L001_70m_merged.fasta, count=WHOI040-V9_S124_L001_70m_final.count_table, reference=/vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/Protist_Ribosomal_reference_db_18S/pr2_version_4.14.0_SSU_mothur.fasta.gz, taxonomy=/vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/Protist_Ribosomal_reference_db_18S/pr2_version_4.14.0_SSU_mothur.tax.gz)
+[ERROR]: Invalid command.
+[ERROR]: did not complete mothur > classify.seqs.
+
+mothur > mothur > classify.seqs(fasta=WHOI010-V9_S94_L001_380m_merged.fasta, count=WHOI010-V9_S94_L001_380m_final.count_table, reference=/vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/Protist_Ribosomal_reference_db_18S/pr2_version_4.14.0_SSU_mothur.fasta.gz, taxonomy=/vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/Protist_Ribosomal_reference_db_18S/pr2_version_4.14.0_SSU_mothur.tax.gz)
+[ERROR]: Invalid command.
+[ERROR]: did not complete mothur > classify.seqs.
+
+mothur > quit()
+
+mothur > quit()
+
+
+************************************************************
+************************************************************
+************************************************************
+Detected 6 [ERROR] messages, please review.
+************************************************************
+************************************************************
+************************************************************

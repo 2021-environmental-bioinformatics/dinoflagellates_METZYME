@@ -1,0 +1,10 @@
+name: bwa_samtools
+channels:
+  - bioconda
+  - defaults
+dependencies:
+  - bwa-mem2
+  - samtools
+  - bwa
+  - metabat2
+prefix: /vortexfs1/home/selkassas/.conda/envs/bwa_samtools

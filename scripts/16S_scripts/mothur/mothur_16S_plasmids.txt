@@ -1,0 +1,16 @@
+##Plasmids - 16S 
+
+#40m
+classify.seqs(fasta=WHOI040_16S_TCGACGAG_40m_merged.fasta, count=WHOI040_16S_TCGACGAG_40m_final.count_table, reference=/vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/Protist_Ribosomal_reference_db_18S/pr2_version_4.14.0_SSU_mothur.fasta, taxonomy=/vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/Protist_Ribosomal_reference_db_18S/pr2_version_4.14.0_SSU_mothur.tax)
+
+#70m
+classify.seqs(fasta=WHOI020_16S_TCGACGAG_70m_merged.fasta, count=WHOI020_16S_TCGACGAG_70m_final.count_table, reference=/vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/Protist_Ribosomal_reference_db_18S/pr2_version_4.14.0_SSU_mothur.fasta, taxonomy=/vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/Protist_Ribosomal_reference_db_18S/pr2_version_4.14.0_SSU_mothur.tax)
+
+#380m
+classify.seqs(fasta=WHOI010_16S_AGAGTCAC_380m_merged.fasta, count=WHOI010_16S_AGAGTCAC_380m_final.count_table, reference=/vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/Protist_Ribosomal_reference_db_18S/pr2_version_4.14.0_SSU_mothur.fasta, taxonomy=/vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/Protist_Ribosomal_reference_db_18S/pr2_version_4.14.0_SSU_mothur.tax)
+
+#Flags
+#The fasta input is the file you need classified taxonomically
+#The count should generate a count table (it usually doesn’t thought)
+#The reference is the pr2 database formatted for mothur
+#The taxonomy is the pr2 tax file formatted for mothur

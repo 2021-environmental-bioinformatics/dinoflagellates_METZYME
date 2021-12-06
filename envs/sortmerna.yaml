@@ -1,0 +1,10 @@
+name: sortmerna
+channels:
+  - bioconda
+  - defaults
+dependencies:
+  - sortmerna
+  - fastq-join
+  - interleafq
+  - flash
+prefix: /vortexfs1/home/selkassas/.conda/envs/sortmerna

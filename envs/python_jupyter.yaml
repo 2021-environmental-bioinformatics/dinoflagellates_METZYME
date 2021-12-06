@@ -1,0 +1,12 @@
+name: python_jupyter
+channels:
+  - conda-forge
+  - defaults
+  - bioconda
+dependencies:
+  - jupyter
+  - pandas
+  - biopython
+  - matplotlib
+  - seaborn
+prefix: /vortexfs1/home/kaabbott/.conda/envs/python_jupyter

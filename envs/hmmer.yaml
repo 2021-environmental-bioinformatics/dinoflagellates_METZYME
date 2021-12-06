@@ -1,0 +1,8 @@
+name: hmmer
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - hmmer
+prefix: /vortexfs1/home/kaabbott/.conda/envs/hmmer

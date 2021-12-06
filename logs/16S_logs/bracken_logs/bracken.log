@@ -1,0 +1,57 @@
+ >> Checking for Valid Options...
+ >> Running Bracken 
+      >> python src/est_abundance.py -i /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/data/16S_reads/trimmed_16S/kraken_taxonomy/40m_subsample_2500.kreport -o 40m.bracken -k /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/silva111/16S_SILVA132_k2db/kraken_silva/database150mers.kmer_distrib -l G -t 10
+>> Checking report file: /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/data/16S_reads/trimmed_16S/kraken_taxonomy/40m_subsample_2500.kreport
+PROGRAM START TIME: 11-22-2021 21:51:32
+BRACKEN SUMMARY (Kraken report: /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/data/16S_reads/trimmed_16S/kraken_taxonomy/40m_subsample_2500.kreport)
+    >>> Threshold: 10 
+    >>> Number of genuses in sample: 148 
+	  >> Number of genuses with reads > threshold: 8 
+	  >> Number of genuses with reads < threshold: 140 
+    >>> Total reads in sample: 2500
+	  >> Total reads kept at genuses level (reads > threshold): 1072
+	  >> Total reads discarded (genuses reads < threshold): 295
+	  >> Reads distributed: 1838
+	  >> Reads not distributed (eg. no genuses above threshold): 662
+	  >> Unclassified reads: 0
+BRACKEN OUTPUT PRODUCED: 40m.bracken
+PROGRAM END TIME: 11-22-2021 21:51:33
+  Bracken complete.
+ >> Checking for Valid Options...
+ >> Running Bracken 
+      >> python src/est_abundance.py -i /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/data/16S_reads/trimmed_16S/kraken_taxonomy/70m_subsample_2500.kreport -o 70m.bracken -k /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/silva111/16S_SILVA132_k2db/kraken_silva/database150mers.kmer_distrib -l G -t 10
+>> Checking report file: /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/data/16S_reads/trimmed_16S/kraken_taxonomy/70m_subsample_2500.kreport
+PROGRAM START TIME: 11-22-2021 21:51:33
+BRACKEN SUMMARY (Kraken report: /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/data/16S_reads/trimmed_16S/kraken_taxonomy/70m_subsample_2500.kreport)
+    >>> Threshold: 10 
+    >>> Number of genuses in sample: 188 
+	  >> Number of genuses with reads > threshold: 23 
+	  >> Number of genuses with reads < threshold: 165 
+    >>> Total reads in sample: 2500
+	  >> Total reads kept at genuses level (reads > threshold): 759
+	  >> Total reads discarded (genuses reads < threshold): 315
+	  >> Reads distributed: 2169
+	  >> Reads not distributed (eg. no genuses above threshold): 329
+	  >> Unclassified reads: 2
+BRACKEN OUTPUT PRODUCED: 70m.bracken
+PROGRAM END TIME: 11-22-2021 21:51:33
+  Bracken complete.
+ >> Checking for Valid Options...
+ >> Running Bracken 
+      >> python src/est_abundance.py -i /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/data/16S_reads/trimmed_16S/kraken_taxonomy/380m_subsample_2500.kreport -o 380m.bracken -k /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/silva111/16S_SILVA132_k2db/kraken_silva/database150mers.kmer_distrib -l G -t 10
+>> Checking report file: /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/data/16S_reads/trimmed_16S/kraken_taxonomy/380m_subsample_2500.kreport
+PROGRAM START TIME: 11-22-2021 21:51:33
+BRACKEN SUMMARY (Kraken report: /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/data/16S_reads/trimmed_16S/kraken_taxonomy/380m_subsample_2500.kreport)
+    >>> Threshold: 10 
+    >>> Number of genuses in sample: 131 
+	  >> Number of genuses with reads > threshold: 12 
+	  >> Number of genuses with reads < threshold: 119 
+    >>> Total reads in sample: 2500
+	  >> Total reads kept at genuses level (reads > threshold): 1288
+	  >> Total reads discarded (genuses reads < threshold): 253
+	  >> Reads distributed: 2071
+	  >> Reads not distributed (eg. no genuses above threshold): 423
+	  >> Unclassified reads: 6
+BRACKEN OUTPUT PRODUCED: 380m.bracken
+PROGRAM END TIME: 11-22-2021 21:51:33
+  Bracken complete.

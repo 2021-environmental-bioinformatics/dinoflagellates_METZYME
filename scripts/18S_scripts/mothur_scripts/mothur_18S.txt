@@ -1,0 +1,26 @@
+#!/bin/bash
+#SBATCH --partition=compute              # Queue selection
+#SBATCH --job-name=mothur_18S            # Job name
+#SBATCH --mail-type=ALL                  # Mail events (BEGIN, END, FAIL, ALL)
+#SBATCH --mail-user=selkassas@whoi.edu   # Where to send mail
+#SBATCH --ntasks=1                       # Run a single task
+#SBATCH --cpus-per-task=36               # Number of CPU cores per task
+#SBATCH --mem=100gb                      # Job memory request
+#SBATCH --time=24:00:00                  # Time limit hrs:min:sec
+#SBATCH --output=mothur_18S%j.log         # Standard output/error
+#export OMP_NUM_THREADS=16
+
+#40m
+classify.seqs(fasta=WHOI021_V9_S105_L001_40m_merged.fasta, count=WHOI021_V9_S105_L001_40m_final.count_table, reference=/vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/Protist_Ribosomal_reference_db_18S/pr2_version_4.14.0_SSU_mothur.fasta, taxonomy=/vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/Protist_Ribosomal_reference_db_18S/pr2_version_4.14.0_SSU_mothur.tax)
+
+#70m
+classify.seqs(fasta=WHOI040_V9_S124_L001_70m_merged.fasta, count=WHOI040_V9_S124_L001_70m_final.count_table, reference=/vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/Protist_Ribosomal_reference_db_18S/pr2_version_4.14.0_SSU_mothur.fasta, taxonomy=/vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/Protist_Ribosomal_reference_db_18S/pr2_version_4.14.0_SSU_mothur.tax)
+
+#380m
+classify.seqs(fasta=WHOI010_V9_S94_L001_380m_merged.fasta, count=WHOI010_V9_S94_L001_380m_final.count_table, reference=/vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/Protist_Ribosomal_reference_db_18S/pr2_version_4.14.0_SSU_mothur.fasta, taxonomy=/vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/Protist_Ribosomal_reference_db_18S/pr2_version_4.14.0_SSU_mothur.tax)
+
+#Flags
+#The fasta input is the file you need classified taxonomically
+#The count should generate a count table (it usually doesn’t thought)
+#The reference is the pr2 database formatted for mothur
+#The taxonomy is the pr2 tax file formatted for mothur

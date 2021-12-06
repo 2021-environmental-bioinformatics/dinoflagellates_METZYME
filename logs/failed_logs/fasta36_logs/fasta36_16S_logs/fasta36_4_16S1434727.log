@@ -1,0 +1,1 @@
+/cm/local/apps/slurm/var/spool/job1434727/slurm_script: line 20: 69925 Killed                  fasta36 -U tail_WHOI040_16S_TCGACGAG_40m_merged.fasta /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/silva111/SSURef_111_tax_silva.fasta > tail_WHOI040_16S_TCGACGAG_40m_SSU_taxonomy

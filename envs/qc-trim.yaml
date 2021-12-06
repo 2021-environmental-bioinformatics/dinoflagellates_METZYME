@@ -1,0 +1,7 @@
+name: qc-trim
+channels:
+  - bioconda
+  - defaults
+dependencies:
+  - trim-galore
+prefix: /vortexfs1/home/selkassas/.conda/envs/qc-trim

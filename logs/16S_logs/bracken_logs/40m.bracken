@@ -1,0 +1,9 @@
+name	taxonomy_id	taxonomy_lvl	kraken_assigned_reads	added_reads	new_est_reads	fraction_total_reads
+Rhodopirellula	46100	G	27	6	33	0.01795
+OM27 clade	44441	G	198	115	313	0.17029
+P3OB-42	45925	G	17	64	81	0.04407
+Cyanobium PCC-6307	44829	G	21	7	28	0.01523
+Prochlorococcus MIT9313	44830	G	767	485	1252	0.68118
+Synechococcus CC9902	44831	G	21	56	77	0.04189
+uncultured	2666	G	11	29	40	0.02176
+uncultured	44437	G	10	0	10	0.00544

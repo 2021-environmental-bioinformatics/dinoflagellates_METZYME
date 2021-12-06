@@ -1,0 +1,1 @@
+/cm/local/apps/slurm/var/spool/job1726145/slurm_script: line 19: 362728 Killed                  fasta36 -U WHOI010-V9_S94_L001_380m_merged.fasta /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/Protist_Ribosomal_reference_db_18S/pr2_version_4.11.1_taxo_long.fasta > WHOI010-V9_S94_L001_380m_18S_taxonomy

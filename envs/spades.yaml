@@ -1,0 +1,5 @@
+name: spades
+channels:
+  - bioconda
+  - defaults
+prefix: /vortexfs1/home/selkassas/.conda/envs/spades

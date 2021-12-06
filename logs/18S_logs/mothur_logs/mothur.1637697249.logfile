@@ -1,0 +1,111 @@
+Linux version
+
+Using ReadLine
+
+Using Boost
+
+Running 64Bit Version
+
+mothur v.1.40.4
+Last updated: 11/23/2021
+by
+Patrick D. Schloss
+
+Department of Microbiology & Immunology
+
+University of Michigan
+http://www.mothur.org
+
+When using, please cite:
+Schloss, P.D., et al., Introducing mothur: Open-source, platform-independent, community-supported software for describing and comparing microbial communities. Appl Environ Microbiol, 2009. 75(23):7537-41.
+
+Distributed under the GNU General Public License
+
+Type 'help()' for information on the commands that are available
+
+For questions and analysis support, please visit our forum at https://www.mothur.org/forum
+
+Type 'quit()' to exit program
+
+Interactive Mode
+
+
+
+mothur > classify.seqs(fasta=WHOI021-V9_S105_L001_40m_merged.fasta, count=WHOI021-V9_S105_L001_40m_final.count_table, reference=/vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/Protist_Ribosomal_reference_db_18S/pr2_version_4.14.0_SSU_mothur.fasta, taxonomy=/vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/Protist_Ribosomal_reference_db_18S/pr2_version_4.14.0_SSU_mothur.tax)
+Unable to open WHOI021. Trying default /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/WHOI021.
+Unable to open /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/WHOI021. Trying mothur's executable location /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/WHOI021.
+Unable to open /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/WHOI021.
+Unable to open V9_S105_L001_40m_merged.fasta. Trying default /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/V9_S105_L001_40m_merged.fasta.
+Unable to open /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/V9_S105_L001_40m_merged.fasta. Trying mothur's executable location /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/V9_S105_L001_40m_merged.fasta.
+Unable to open /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/V9_S105_L001_40m_merged.fasta.
+no valid files.
+Unable to open WHOI021. Trying default /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/WHOI021.
+Unable to open /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/WHOI021. Trying mothur's executable location /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/WHOI021.
+Unable to open /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/WHOI021.
+Unable to open V9_S105_L001_40m_final.count_table. Trying default /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/V9_S105_L001_40m_final.count_table.
+Unable to open /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/V9_S105_L001_40m_final.count_table. Trying mothur's executable location /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/V9_S105_L001_40m_final.count_table.
+Unable to open /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/V9_S105_L001_40m_final.count_table.
+
+Using 36 processors.
+[ERROR]: did not complete classify.seqs.
+
+mothur > classify.seqs(fasta=WHOI040-V9_S124_L001_70m_merged.fasta, count=WHOI040-V9_S124_L001_70m_final.count_table, reference=/vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/Protist_Ribosomal_reference_db_18S/pr2_version_4.14.0_SSU_mothur.fasta.gz, taxonomy=/vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/Protist_Ribosomal_reference_db_18S/pr2_version_4.14.0_SSU_mothur.tax.gz)
+Unable to open WHOI040. Trying default /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/WHOI040.
+Unable to open /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/WHOI040. Trying mothur's executable location /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/WHOI040.
+Unable to open /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/WHOI040.
+Unable to open V9_S124_L001_70m_merged.fasta. Trying default /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/V9_S124_L001_70m_merged.fasta.
+Unable to open /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/V9_S124_L001_70m_merged.fasta. Trying mothur's executable location /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/V9_S124_L001_70m_merged.fasta.
+Unable to open /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/V9_S124_L001_70m_merged.fasta.
+no valid files.
+Unable to open WHOI040. Trying default /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/WHOI040.
+Unable to open /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/WHOI040. Trying mothur's executable location /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/WHOI040.
+Unable to open /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/WHOI040.
+Unable to open V9_S124_L001_70m_final.count_table. Trying default /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/V9_S124_L001_70m_final.count_table.
+Unable to open /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/V9_S124_L001_70m_final.count_table. Trying mothur's executable location /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/V9_S124_L001_70m_final.count_table.
+Unable to open /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/V9_S124_L001_70m_final.count_table.
+
+Using 36 processors.
+Unable to open /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/Protist_Ribosomal_reference_db_18S/pr2_version_4.14.0_SSU_mothur.fasta.gz. Trying default /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/pr2_version_4.14.0_SSU_mothur.fasta.gz.
+Unable to open /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/pr2_version_4.14.0_SSU_mothur.fasta.gz. Trying mothur's executable location /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/pr2_version_4.14.0_SSU_mothur.fasta.gz.
+Unable to open /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/pr2_version_4.14.0_SSU_mothur.fasta.gz.
+Unable to open /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/Protist_Ribosomal_reference_db_18S/pr2_version_4.14.0_SSU_mothur.fasta.gz
+Unable to open /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/Protist_Ribosomal_reference_db_18S/pr2_version_4.14.0_SSU_mothur.tax.gz. Trying default /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/pr2_version_4.14.0_SSU_mothur.tax.gz.
+Unable to open /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/pr2_version_4.14.0_SSU_mothur.tax.gz. Trying mothur's executable location /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/pr2_version_4.14.0_SSU_mothur.tax.gz.
+Unable to open /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/pr2_version_4.14.0_SSU_mothur.tax.gz.
+Unable to open /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/Protist_Ribosomal_reference_db_18S/pr2_version_4.14.0_SSU_mothur.tax.gz
+[ERROR]: did not complete classify.seqs.
+
+mothur > classify.seqs(fasta=WHOI021-V9_S105_L001_40m_merged.fasta, template=vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/Protist_Ribosomal_reference_db_18S/pr2_version_4.14.0_SSU_mothur.fasta, taxonomy=/vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/Protist_Ribosomal_reference_db_18S/pr2_version_4.14.0_SSU_mothur.tax)
+Unable to open WHOI021. Trying default /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/WHOI021.
+Unable to open /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/WHOI021. Trying mothur's executable location /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/WHOI021.
+Unable to open /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/WHOI021.
+Unable to open V9_S105_L001_40m_merged.fasta. Trying default /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/V9_S105_L001_40m_merged.fasta.
+Unable to open /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/V9_S105_L001_40m_merged.fasta. Trying mothur's executable location /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/V9_S105_L001_40m_merged.fasta.
+Unable to open /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/V9_S105_L001_40m_merged.fasta.
+no valid files.
+
+Using 36 processors.
+Unable to open vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/Protist_Ribosomal_reference_db_18S/pr2_version_4.14.0_SSU_mothur.fasta. Trying default /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/pr2_version_4.14.0_SSU_mothur.fasta.
+Unable to open /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/pr2_version_4.14.0_SSU_mothur.fasta. Trying mothur's executable location /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/pr2_version_4.14.0_SSU_mothur.fasta.
+Unable to open /vortexfs1/home/selkassas/.conda/envs/mothur_1.46.1/bin/pr2_version_4.14.0_SSU_mothur.fasta.
+Unable to open vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/Protist_Ribosomal_reference_db_18S/pr2_version_4.14.0_SSU_mothur.fasta
+[ERROR]: did not complete classify.seqs.
+
+mothur > ls
+[ERROR]: You are missing (
+[ERROR]: Invalid.
+
+mothur > cd ..
+[ERROR]: You are missing (
+[ERROR]: Invalid.
+
+mothur > quit()
+
+
+************************************************************
+************************************************************
+************************************************************
+Detected 7 [ERROR] messages, please review.
+************************************************************
+************************************************************
+************************************************************
