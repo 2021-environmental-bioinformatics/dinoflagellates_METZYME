@@ -4,8 +4,8 @@ We chose the paper “Dinoflagellates alter their carbon and nutrient metabolic 
 
 Cohen, Natalie R., Matthew R. McIlvin, Dawn M. Moran, Noelle A. Held, Jaclyn K. Saunders, Nicholas J. Hawco, Michael Brosnahan et al. "Dinoflagellates alter their carbon and nutrient metabolic strategies across environmental gradients in the central Pacific Ocean." Nature Microbiology 6, no. 2 (2021): 173-186.
 
-Data availability
-——————————————————————————————————————————————
+## Data availability
+—————————————————————————————————————————————————————————————\
 The data is available at the following links:
 
 Metatranscriptomic reads: https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA555787
@@ -16,19 +16,18 @@ located under Biosample accession numbers:  SAMN12332710–SAMN12332751
 
 # Metatranscriptome processing
 
-Merging forward and reverse MetaT reads then Removing rRNA reads from MetaT with SortMeRNA 4.2.0
-————————————————————————————————————————————————————————————————
+### Merging forward and reverse MetaT reads then Removing rRNA reads from MetaT with SortMeRNA 4.2.0
+—————————————————————————————————————————————————————————————\
 Programs: SortMeRNA 4.2.0
 
 Metatranscriptome QC - did not QC this data; all are fasta (.fna) files
 
-#Create the conda environment
+Create the conda environment
 ```
 conda create --name sortmerna
 conda activate sortmerna
 conda install -c bioconda sortmerna
 ```
-
 
 SortMeRNA 4.2.0
 ```
@@ -41,7 +40,7 @@ aligned ribosomal RNA sequence data compatible with ARB.
 Nuc. Acids Res. 2007; Vol. 35, No. 21, p. 7188-7196
 ```
 
-#This will give you the newest version. It is 4.2.0. Any 'indexdb_rna' commands will not work. There is only one command now, 'sortmerna'. Everything, including indexing your databases will be done with this. 
+This will give you the newest version. It is 4.2.0. Any 'indexdb_rna' commands will not work. There is only one command now, 'sortmerna'. Everything, including indexing your databases will be done with this. 
 
 2. Clone the GitHub repo and its contents:
 
@@ -150,8 +149,8 @@ echo `grep -c '>' ${SILVAfasta%.fasta}-database-id$ID.fasta`
 echo "Done."
 ```
 
-#SortmeRNA code - merged, paired reads 
-Script name in GitHub: sortmerna_metaT.sh
+SortmeRNA code - merged, paired reads   
+***Script name in GitHub:*** sortmerna_metaT.sh
 ```
 	#general format/usage: 
 
@@ -209,12 +208,12 @@ sortmerna --ref /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/d
 
 Source: Kopylova E., Noé L. and Touzet H., "SortMeRNA: Fast and accurate filtering of ribosomal RNAs in metatranscriptomic data", Bioinformatics (2012), doi: 10.1093/bioinformatics/bts611.
 
-Assembling MetaT reads using SPAdes with RNASPAdes feature 
-————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+### Assembling MetaT reads using SPAdes with RNASPAdes feature 
+—————————————————————————————————————————————————————————————\
 Programs used: SPAdes v.3.15.3
 
-Coassembled using RNASPAdes
-Script name in GitHub: RNASPAdes_coassembly.sh
+Coassembled using RNASPAdes   
+***Script name in GitHub:***  RNASPAdes_coassembly.sh
 ```
 #!/bin/bash
 #SBATCH --partition=scavenger            # Queue selection
@@ -241,8 +240,8 @@ source activate spades
 ```
  
 
-Annotating metaT assembly using FragGeneScan v.1.31
-————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+### Annotating metaT assembly using FragGeneScan v.1.31
+—————————————————————————————————————————————————————————————\
 Programs used: FragGeneScan v.1.31
 
 Description: FragGeneScan is an application for finding (fragmented) genes in short reads. It can also be applied to predict prokaryotic genes in incomplete assemblies or complete genomes.
@@ -258,8 +257,8 @@ conda activate FragGeneScan
 conda install -c bioconda fraggenescan
 ```
 
-Code to run FragGeneScan:
-Script name in GitHub: fraggenescan_script_coassembly_and_mRNA.sh
+Code to run FragGeneScan:   
+***Script name in GitHub:*** fraggenescan_script_coassembly_and_mRNA.sh
 ```
 USAGE: ./FragGeneScan -s [seq_file_name] -o [output_file_name] -w [1 or 0] -t [train_file_name] (-p [thread_num])
 
@@ -316,16 +315,19 @@ FragGeneScan -s /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/d
 #The -p flag is the number of threads to use. default is 1. 
 ```
  
-Mapping reads to ORFs using the Burrows–Wheeler Aligner-MEM (0.7.17) and Samtools (1.14)————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+### Mapping reads to ORFs using the Burrows–Wheeler Aligner-MEM (0.7.17) and Samtools (1.14)
+—————————————————————————————————————————————————————————————\
 Programs used: Burrows-Wheeler Aligner 0.7.17 and Samtools 1.14
-—-From what I understand, the mRNA reads need to be mapped to annotated coassembly, so we will have 3 align files and sam and bam files to go with each. FragGeneScan generated the following outputs: 
-	•	The .out file contains a summary of the number of features annotated.
-	•	The .faa file contains the protein sequences of the genes annotated.
-	•	The .ffn file contains the nucleotide sequences of the genes annotated
+—-From what I understand, the mRNA reads need to be mapped to annotated coassembly, so we will have 3 align files and sam and bam files to go with each. 
+FragGeneScan generated the following outputs:   
+	•	The .out file contains a summary of the number of features annotated.  
+	•	The .faa file contains the protein sequences of the genes annotated.  
+	•	The .ffn file contains the nucleotide sequences of the genes annotated.    
 
-I already had this conda environment created for HW3. 
-#Slurm script for submitting bwa mem code on mRNA NUCLEOTIDE files: 
-Script name in GitHub: bwa_mem_mapping_samtools_NUCLEOTIDE.sh
+I already had this conda environment created for HW3.      
+
+Slurm script for submitting bwa mem code on mRNA NUCLEOTIDE files:    
+***Script name in GitHub:***  bwa_mem_mapping_samtools_NUCLEOTIDE.sh
 ```
 #!/bin/bash
 #SBATCH --partition=scavenger            # Queue selection
@@ -381,9 +383,9 @@ samtools sort 30B91_S28_001_380m_mRNA_mapped.bam -o 30B91_S28_001_380m_mRNA_mapp
 #The -o flag specifies output file
 ```
 
-#Slurm script for submitting bwa mem code on mRNA AMINO ACID files: Ultimately, we did end up using these output to calculate TPM for figure 3a.
-Script name in GitHub: bwa_mem_mapping_samtool_AMINOACID.sh
-
+Slurm script for submitting bwa mem code on mRNA AMINO ACID files:   
+Ultimately, we did end up using these output to calculate TPM for figure 3a.   
+***Script name in GitHub:*** bwa_mem_mapping_samtool_AMINOACID.sh
 ```
 #!/bin/bash
 #SBATCH --partition=scavenger            # Queue selection
@@ -440,7 +442,8 @@ samtools sort 30B91_S28_001_380m_mRNA_translated_mapped.bam -o 30B91_S28_001_380
 ```
 
 
-Assigning taxonomy and function to ORFs using Diamond v2.0.13 with BlastP function and PhyloDB v.1.075————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+### Assigning taxonomy and function to ORFs using Diamond v2.0.13 with BlastP function and PhyloDB v.1.075
+—————————————————————————————————————————————————————————————\
 Programs used: diamond v.2.0.13 PhyloDB v.1.075
 
 Creating the conda environment: 
@@ -458,8 +461,8 @@ diamond makedb --in /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZY
 —> —in must be a fasta file 
 ```
 
-A binary file (PhyloDB.dmnd) containing the database sequences will be created in the current working directory. We will now conduct a search against this database using the translated mRNA mapped and sorted binary files as queries:
-Script name in GitHub: diamond_faa_mRNA.sh
+A binary file (PhyloDB.dmnd) containing the database sequences will be created in the current working directory. We will now conduct a search against this database using the translated mRNA mapped and sorted binary files as queries:   
+***Script name in GitHub:*** diamond_faa_mRNA.sh
 ```
 #!/bin/bash
 #SBATCH --partition=compute            # Queue selection
@@ -498,8 +501,8 @@ diamond blastp -q 30B91_S28_001_380m_mRNA_annotated.faa -d PhyloDB --evalue 0.00
 #The -o	flag specifies the name of the output file
 ```
 
-Diamond code for coassembly against PhyloDB:
-Script name in GitHub: diamond_faa_coassembly.sh 
+Diamond code for coassembly against PhyloDB:   
+***Script name in GitHub:*** diamond_faa_coassembly.sh 
 ```
 #!/bin/bash
 #SBATCH --partition=scavenger                   # Queue selection
@@ -528,11 +531,11 @@ diamond blastp -q ${dir}/dino_metzyme_annotated_coassembly.faa -d PhyloDB --eval
 #The -o	flag specifies the name of the output file
 ```
 
-Getting taxonomy from diamond output 
-————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+### Getting taxonomy from diamond output 
+—————————————————————————————————————————————————————————————\
 (modifying from this repository: https://github.com/Lswhiteh/phylodbannotation)
 
-Script name in GitHub: diamond_taxonomy.py
+***Script name in GitHub:*** diamond_taxonomy.py
 ```
 srun -p compute --ntasks-per-node=2 --mem=100G --time=05:00:00 --pty bash
 
@@ -593,8 +596,8 @@ for dmd_file in diamond_files:
 ~
 ```
 
-Annotate genes using KEGG via GhostKOALA
-————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+### Annotate genes using KEGG via GhostKOALA
+—————————————————————————————————————————————————————————————\
 "To maximize functional assignments, sequences were searched against the KEGG and EuKaryotic Orthologous Groups (KOG) tools and conserved protein domain families were identified using HMMER v.3.1b2 (ref. 121) with Pfam”
 
 Based on this information, we chose to use the online web server KEGG tools. Note that GhostKOALA was chosen because it had slightly higher accuracy than KofamKOALA, and works better on large sequences than BlastKOALA (which only accepts up to 10,000 sequences for a single run).
@@ -609,6 +612,31 @@ awk 'BEGIN {n_seq=0;} /^>/ {if(n_seq%1500000==0){file=sprintf("dino_metzyme_anno
 Submit by adding .faa file to the online web form at https://www.kegg.jp/ghostkoala/ and enter email address
 
 Once completed (took up to 12 hours), download 3 files (user_ko.txt, user_ko_definition.txt, user.out.top.gz) to local computer and scp back to Vortex.
+
+***Script name in GitHub:*** generate_KEGG_orthology.txt
+```
+#!/bin/bash
+
+# Taken from Meren Lab's handy tutorial
+# https://merenlab.org/2018/01/17/importing-ghostkoala-annotations/
+
+# turns hierarchical .keg file into tab-delimited file where each row is a gene with different columsn describing layers of classification
+
+cd /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/KEGG
+
+wget 'https://www.genome.jp/kegg-bin/download_htext?htext=ko00001&format=htext&filedir=' -O ko00001.keg
+
+kegfile="ko00001.keg"
+
+while read -r prefix content
+do
+    case "$prefix" in A) col1="$content";; \
+                      B) col2="$content" ;; \
+                      C) col3="$content";; \
+                      D) echo -e "$col1\t$col2\t$col3\t$content";;
+    esac 
+done < <(sed '/^[#!+]/d;s/<[^>]*>//g;s/^./& /' < "$kegfile") > KO_Orthology_ko00001.txt
+```
  
 Recombine into one file with commands similar to the following:
 
@@ -617,10 +645,12 @@ cat dino_metzyme_annotated_coassembly_0_KO.txt >> dino_metzyme_annotated_coassem
 cat dino_metzyme_annotated_coassembly_150000_KO.txt >> dino_metzyme_annotated_coassembly_KEGG_annotation.txt
 ```
 
-Note that naming convention now is dino_metzyme_annotated_coassembly_KEGG_annotation.txt: KEGG annotations for each gene, empty if it could not classify. dino_metzyme_annotated_coassembly_KEGG_annotation_full.txt: KEGG annotations for each gene, including brief written description, as well as GhostKOALA score and second-best classification. 
+Note that naming convention now is dino_metzyme_annotated_coassembly_KEGG_annotation.txt: KEGG annotations for each gene, empty if it could not classify.
+dino_metzyme_annotated_coassembly_KEGG_annotation_full.txt: KEGG annotations for each gene, including brief written description, as well as GhostKOALA score and second-best 
+classification. 
 
-Finding conserved protein domain families using HMMER with PFAM db and KOG db
-————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+### Finding conserved protein domain families using HMMER with PFAM db and KOG db
+—————————————————————————————————————————————————————————————\
 Programs used: HMMER 3.3.2, PFAM 35.1
 
 Creating the conda environment:
@@ -637,8 +667,9 @@ wget ftp://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz
 ```
 
 HMMsearch just for the 3 protein families of interest: PF01036, PF03713, and PF07692
-You can access these files by querying on http://pfam.xfam.org/search#tabview=tab1 by keyword. Then click on “alignments” on the lefthand of the page, scroll down to “format an alignment”, fill in the UniProt bubble, then click “Generate” to download the SELEX file for that protein. 
-Script name in GitHub: hmmsearch_3_proteins.sh
+You can access these files by querying on http://pfam.xfam.org/search#tabview=tab1 by keyword. Then click on “alignments” on the lefthand of the page, scroll down to “format an 
+alignment”, fill in the UniProt bubble, then click “Generate” to download the SELEX file for that protein.    
+***Script name in GitHub:*** hmmsearch_3_proteins.sh
 ```
 #!/bin/bash
 #SBATCH --partition=compute              # Queue selection
@@ -674,8 +705,8 @@ hmmsearch -o dino_metzyme_annotated_coassembly_low_iron_inducible_periplasmic_pr
 #The -o flag is the name of the output. You then input the built hmm file and lastly enter the .faa file to be searched. 
 ```
 
-There is a single KOG gene included in figure 3, so we also ran HMMER against that: KOG2348
-Script name in GitHub: KOG_hmmsearch.sh
+There is a single KOG gene included in figure 3, so we also ran HMMER against that: KOG2348   
+***Script name in GitHub:*** KOG_hmmsearch.sh
 ```
 #!/bin/bash
 #SBATCH --partition=compute              # Queue selection
@@ -703,8 +734,8 @@ echo $data_dir
 hmmsearch -o hmmer_output/dino_metzyme_annotated_coassembly_KOG2348_out -E 0.001 ${kog_dir}/KOG2348.hmm dino_metzyme_annotated_coassembly.faa
 ```
 
-TPM normalization
-————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+### TPM normalization
+—————————————————————————————————————————————————————————————\
 Need to index bam files before we can use pysam to read them into Python
 ```
 conda activate bwa_samtools 
@@ -720,8 +751,8 @@ jupyter notebook --no-browser —port=8899
 #Open TPM_normalization from the home directory, dinoflagellates_METZYME  
 ```
 
-TPM figure (figure 3a in the paper)
-————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+### TPM figure (figure 3a in the paper)
+—————————————————————————————————————————————————————————————\
 Done in python. See directions below
 ```
 Run `conda activate python_jupyter`
@@ -732,8 +763,8 @@ Allocate an interactive job on the HPC with
 - `TPM_normalization_and_plotting.ipynb` links the KEGG, KOG and Pfam annotations to the taxonomic classification TSV for dinoflagellates. It additionally uses the number of reads mapped to each ORF (BWA alignment) to calculate the transcripts per million (TPM). The z-scores for each gene of interest are calculated, and the results are plotted as a heat map for the top 50 KEGG-annotated genes identified in the Cohen et al. paper. 
 ```
 
-Supergroup transcript abundance (figure 1c)
-————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+### Supergroup transcript abundance (figure 1c)
+—————————————————————————————————————————————————————————————\
 Done in python. See directions below
 ```
 Run `conda activate python_jupyter`
@@ -748,13 +779,14 @@ Allocate an interactive job on the HPC with
 - `community-abundance_from_transcripts.ipynb` takes the output of the reclassify_transcripts notebook and the output of the BWA alignment to calculate the total number of transcripts that map to each taxa of interest and normalizes it by the total number of transcripts to get relative community abundance. This relative abundance is plotted for both the eukaryotic and whole communities.
 ```
 
-16S rRNA processing
-Quality Controlling the data
-————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+# 16S rRNA processing
+### Quality Controlling the data
+—————————————————————————————————————————————————————————————\
 Programs = trim_galore v.0.6.7 + fastqc v.0.11.9
 
 16S Trimming and FastQC on default settings
-#files are only a maximum of 13MB, so ran this on srun
+#files are only a maximum of 13MB, so ran this on srun   
+***Script name in GitHub:*** 16S_trim.sh
 ```
 srun -p scavenger --time=04:00:00 --ntasks-per-node 2 --pty bash 
 conda activate qc-trim
@@ -772,24 +804,24 @@ trim_galore --paired --fastqc WHOI010_16S_AGAGTCAC_R1.fastq.gz  WHOI010_16S_AGAG
 
 How trimmed 16s compares in size to untrimmed:
 
-raw total 14M
--rwx------ 1 selkassas sg-envbio-mgr 2.9M Oct 20 21:18 WHOI010_16S_AGAGTCAC_R2.fastq.gz
--rwx------ 1 selkassas sg-envbio-mgr 2.2M Oct 20 21:18 WHOI020_16S_TCGACGAG_R1.fastq.gz
--rwx------ 1 selkassas sg-envbio-mgr 2.2M Oct 20 21:18 WHOI040_16S_TCGACGAG_R2.fastq.gz
--rwx------ 1 selkassas sg-envbio-mgr 3.2M Oct 20 21:18 WHOI020_16S_TCGACGAG_R2.fastq.gz
--rwx------ 1 selkassas sg-envbio-mgr 1.9M Oct 20 21:18 WHOI010_16S_AGAGTCAC_R1.fastq.gz
--rwx------ 1 selkassas sg-envbio-mgr 1.5M Oct 20 21:18 WHOI040_16S_TCGACGAG_R1.fastq.gz
+raw total 14M   
+-rwx------ 1 selkassas sg-envbio-mgr 2.9M Oct 20 21:18 WHOI010_16S_AGAGTCAC_R2.fastq.gz     
+-rwx------ 1 selkassas sg-envbio-mgr 2.2M Oct 20 21:18 WHOI020_16S_TCGACGAG_R1.fastq.gz     
+-rwx------ 1 selkassas sg-envbio-mgr 2.2M Oct 20 21:18 WHOI040_16S_TCGACGAG_R2.fastq.gz     
+-rwx------ 1 selkassas sg-envbio-mgr 3.2M Oct 20 21:18 WHOI020_16S_TCGACGAG_R2.fastq.gz     
+-rwx------ 1 selkassas sg-envbio-mgr 1.9M Oct 20 21:18 WHOI010_16S_AGAGTCAC_R1.fastq.gz     
+-rwx------ 1 selkassas sg-envbio-mgr 1.5M Oct 20 21:18 WHOI040_16S_TCGACGAG_R1.fastq.gz     
 
-trimmed total 13M
--rwx------ 1 selkassas sg-envbio-mgr 2.0M Oct 20 21:32 WHOI040_16S_TCGACGAG_R2_val_2.fq.gz
--rwx------ 1 selkassas sg-envbio-mgr 1.4M Oct 20 21:32 WHOI040_16S_TCGACGAG_R1_val_1.fq.gz
--rwx------ 1 selkassas sg-envbio-mgr 2.9M Oct 20 21:32 WHOI020_16S_TCGACGAG_R2_val_2.fq.gz
--rwx------ 1 selkassas sg-envbio-mgr 2.1M Oct 20 21:32 WHOI020_16S_TCGACGAG_R1_val_1.fq.gz
--rwx------ 1 selkassas sg-envbio-mgr 2.6M Oct 20 21:31 WHOI010_16S_AGAGTCAC_R2_val_2.fq.gz
--rwx------ 1 selkassas sg-envbio-mgr 1.9M Oct 20 21:31 WHOI010_16S_AGAGTCAC_R1_val_1.fq.gz
+trimmed total 13M     
+-rwx------ 1 selkassas sg-envbio-mgr 2.0M Oct 20 21:32 WHOI040_16S_TCGACGAG_R2_val_2.fq.gz     
+-rwx------ 1 selkassas sg-envbio-mgr 1.4M Oct 20 21:32 WHOI040_16S_TCGACGAG_R1_val_1.fq.gz     
+-rwx------ 1 selkassas sg-envbio-mgr 2.9M Oct 20 21:32 WHOI020_16S_TCGACGAG_R2_val_2.fq.gz     
+-rwx------ 1 selkassas sg-envbio-mgr 2.1M Oct 20 21:32 WHOI020_16S_TCGACGAG_R1_val_1.fq.gz     
+-rwx------ 1 selkassas sg-envbio-mgr 2.6M Oct 20 21:31 WHOI010_16S_AGAGTCAC_R2_val_2.fq.gz     
+-rwx------ 1 selkassas sg-envbio-mgr 1.9M Oct 20 21:31 WHOI010_16S_AGAGTCAC_R1_val_1.fq.gz     
 
-Classifying 16S using KRAKEN2
-————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+### Classifying 16S using KRAKEN2
+—————————————————————————————————————————————————————————————\
 Programs used: fq2fa 1.1.3, kraken2 2.1.2 
 
 Setting up the conda environment:
@@ -799,7 +831,7 @@ conda activate kraken2
 conda install -c bioconda kraken2
 ```
 
-Change .fastq files to .fasta files using fq2fa (IDBA_UD extension). We will need this as an input for later programs.
+Change .fastq files to .fasta files using fq2fa (IDBA_UD extension). We will need this as an input for later programs.   
 Script name in Github: fq2fa_16S.sh
 ```
 #get fq2fa
@@ -833,7 +865,8 @@ wget ftp://ftp.ccb.jhu.edu/pub/data/kraken2_dbs/16S_Silva132_20200326.tgz
 tar -xvzf 16S_Silva132_20200326.tgz
 ```
 
-Code to run Kraken2: 
+Code to run Kraken2:   
+***Script name in GitHub:*** kraken2_paired.sh
 ```
 #!/bin/bash
 #SBATCH --partition=scavenger            # Queue selection
@@ -866,13 +899,14 @@ kraken2 --db /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/data
 #The —-paired flag indicated the input are two paired forward and reverse reads
 ```
 
-Classifying 16S plasmids using mothur classify.seqs
-————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+### Classifying 16S plasmids using mothur classify.seqs
+—————————————————————————————————————————————————————————————\
 mothur 1.46.1 
 
 Mapping the 16S to the Protist Ribosomal Database v.4.14.0 will label plastid sequences. This is a recent update. So, we classified the 16S again using PR2, but only kept plastid sequences, denoted by :plas.
 
-Prep the classify.seqs file 
+Prep the classify.seqs file   
+***Script name in GitHub:*** mothur_16S_plasmids.txt
 ```
 nano mothur_16S_plasmids.txt
 ##Plasmids - 16S 
@@ -887,7 +921,8 @@ classify.seqs(fasta=WHOI020_16S_TCGACGAG_70m_merged.fasta, count=WHOI020_16S_TCG
 classify.seqs(fasta=WHOI010_16S_AGAGTCAC_380m_merged.fasta, count=WHOI010_16S_AGAGTCAC_380m_final.count_table, reference=/vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/Protist_Ribosomal_reference_db_18S/pr2_version_4.14.0_SSU_mothur.fasta, taxonomy=/vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/Protist_Ribosomal_reference_db_18S/pr2_version_4.14.0_SSU_mothur.tax)
 ```
 
-SlURM script
+SlURM script   
+***Script name in GitHub:***  mothur_16S_SLURM.sh
 ```
 nano mothur_16S_SLURM.sh
 
@@ -915,9 +950,8 @@ sbatch mothur_16S_SLURM.sh
 #activates mothur then runs the commands in mothur_18S.txt
 ```
 
-
-Subsampling 144 plastids and 2500 18S using shuf (in bash)
-————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+### Subsampling 144 plastids and 2500 18S using shuf (in bash)
+—————————————————————————————————————————————————————————————\
 
 filtering out plastids from mothur plastid taxonomy
 ```
@@ -934,8 +968,8 @@ shuf WHOI040_16S_TCGACGAG_40m_plastids_only | head -n 144 > WHOI040_16S_TCGACGAG
 shuf WHOI010_16S_AGAGTCAC_380m_plastids_only | head -n 144 > WHOI010_16S_AGAGTCAC_380m_plastids_only_144_subsampled
 ```
 
-Removing plastids from 16S using grep, subsampling 6000 16S using shuf (in bash)
-————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+### Removing plastids from 16S using grep, subsampling 6000 16S using shuf (in bash)
+—————————————————————————————————————————————————————————————\
 
 First, select first column (containing the accession numbers/sample names) from the plastid taxonomy and make it into a new file. We are going to search the full 16S taxonomy and select only sequences that DO NOT match the plastid sequences. 
 
@@ -969,8 +1003,8 @@ shuf WHOI020_16S_TCGACGAG_70m_no_plastids | head -n 6000 > WHOI020_16S_TCGACGAG_
 shuf WHOI010_16S_AGAGTCAC_380m_no_plastids | head -n 6000 >WHOI010_16S_AGAGTCAC_380m_no_plastids_6000_subsampled
 ```
 
-Generate a parsable kraken report with taxonomic information on 16S. This will help to make the count table then the relative abundance plot (fig 1c)
-Script name in GitHub: kraken_taxonomy.sh
+Generate a parsable kraken report with taxonomic information on 16S. This will help to make the count table then the relative abundance plot (fig 1c)   
+***Script name in GitHub:***  kraken_taxonomy.sh
 ```
 #!/bin/bash
 #SBATCH --partition=scavenger            # Queue selection
@@ -1005,9 +1039,9 @@ mv WHOI020_16S_TCGACGAG_70m_no_plastids_6000_subsampled_report 70m_16S_no_plasti
 mv WHOI010_16S_AGAGTCAC_380m_no_plastids_6000_subsampled_report 380m_16S_no_plastids_subsample_6000.kreport
 ```
 
-Preparing 16S taxonomy for stacked barplot figure creation
-————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
-Selecting only the taxonomy shown in the figure in the paper: 
+### Preparing 16S taxonomy for stacked barplot figure creation
+—————————————————————————————————————————————————————————————\
+Selecting only the taxonomy shown in the figure in the paper, did in bash:
 ```
 #40m 
 cut -f 2,6 40m_16S_no_plastids_subsample_6000.kreport | grep -E 'Bacteroidota|Betaproteobacteria|Gammaproteobacteria|Prochlorococcus|Alphaproteobacteria|Desulfobacteria|Archaea|Myxococcota|SAR324|Bdellvibrionota|Synechococcus' > 40m_16S_count_table.csv
@@ -1035,8 +1069,8 @@ other cyanobacteria = 675
 
 Note: selected Myxococcota, Desulfobacterota, SAR324, and Bdellvibrionota, since they are the new designations for deltaproteobacteria. Kraken2 also grouped all betaproteobacteria under Burkholderiales. 
 
-To make the plot: 
-Script name in Github: 16S_plot.R 
+To make the plot:   
+***Script name in GitHub:***  16S_plot.R 
 ```
 library(tidyverse)
 library(reshape2) 
@@ -1074,11 +1108,9 @@ ggplot(station_9_16S_delta_tax_table, aes(x = fct_relevel(Sample, "9_40m", "9_70
   geom_bar(stat = "identity", width = 0.5) + theme(axis.text.x.bottom = element_text(angle = 45)) + scale_fill_manual(values=col_vector)
 ```
 
-
-
-18S rRNA processing
-Quality Controlling the data
-————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+# 18S rRNA processing
+### Quality Controlling the data
+—————————————————————————————————————————————————————————————\
 Programs = trim_galore v.0.6.7 + fastqc v.0.11.9
 
 18S Trimming and FastQC on default settings 
@@ -1101,27 +1133,27 @@ trim_galore --paired fastqc WHOI010-V9_S94_L001_R1_001.fastq WHOI010-V9_S94_L001
 
 How trimmed 18s compares in size to untrimmed:
 
-raw total 11M
--rwx------ 1 kaabbott sg-envbio-mgr 2.0M Oct 14 15:37 WHOI021-V9_S105_L001_R1_001.fastq
--rwx------ 1 kaabbott sg-envbio-mgr 1.9M Oct 14 15:37 WHOI040-V9_S124_L001_R2_001.fastq
--rwx------ 1 kaabbott sg-envbio-mgr 1.2M Oct 14 15:37 WHOI010-V9_S94_L001_R1_001.fastq
--rwx------ 1 kaabbott sg-envbio-mgr 2.0M Oct 14 15:37 WHOI021-V9_S105_L001_R2_001.fastq
--rwx------ 1 kaabbott sg-envbio-mgr 1.9M Oct 14 15:37 WHOI040-V9_S124_L001_R1_001.fastq
--rwx------ 1 kaabbott sg-envbio-mgr 1.2M Oct 14 15:37 WHOI010-V9_S94_L001_R2_001.fastq
+raw total 11M     
+-rwx------ 1 kaabbott sg-envbio-mgr 2.0M Oct 14 15:37 WHOI021-V9_S105_L001_R1_001.fastq     
+-rwx------ 1 kaabbott sg-envbio-mgr 1.9M Oct 14 15:37 WHOI040-V9_S124_L001_R2_001.fastq     
+-rwx------ 1 kaabbott sg-envbio-mgr 1.2M Oct 14 15:37 WHOI010-V9_S94_L001_R1_001.fastq     
+-rwx------ 1 kaabbott sg-envbio-mgr 2.0M Oct 14 15:37 WHOI021-V9_S105_L001_R2_001.fastq     
+-rwx------ 1 kaabbott sg-envbio-mgr 1.9M Oct 14 15:37 WHOI040-V9_S124_L001_R1_001.fastq     
+-rwx------ 1 kaabbott sg-envbio-mgr 1.2M Oct 14 15:37 WHOI010-V9_S94_L001_R2_001.fastq     
 
-total 11M
--rwx------ 1 selkassas sg-envbio-mgr 2.0M Oct 20 21:51 WHOI021-V9_S105_L001_R2_001_val_2.fq
--rwx------ 1 selkassas sg-envbio-mgr 2.0M Oct 20 21:51 WHOI021-V9_S105_L001_R1_001_val_1.fq
--rwx------ 1 selkassas sg-envbio-mgr 1.9M Oct 20 21:51 WHOI040-V9_S124_L001_R2_001_val_2.fq
--rwx------ 1 selkassas sg-envbio-mgr 1.9M Oct 20 21:51 WHOI040-V9_S124_L001_R1_001_val_1.fq
--rwx------ 1 selkassas sg-envbio-mgr 1.2M Oct 20 21:51 WHOI010-V9_S94_L001_R2_001_val_2.fq
--rwx------ 1 selkassas sg-envbio-mgr 1.2M Oct 20 21:51 WHOI010-V9_S94_L001_R1_001_val_1.fq
+total 11M     
+-rwx------ 1 selkassas sg-envbio-mgr 2.0M Oct 20 21:51 WHOI021-V9_S105_L001_R2_001_val_2.fq     
+-rwx------ 1 selkassas sg-envbio-mgr 2.0M Oct 20 21:51 WHOI021-V9_S105_L001_R1_001_val_1.fq     
+-rwx------ 1 selkassas sg-envbio-mgr 1.9M Oct 20 21:51 WHOI040-V9_S124_L001_R2_001_val_2.fq     
+-rwx------ 1 selkassas sg-envbio-mgr 1.9M Oct 20 21:51 WHOI040-V9_S124_L001_R1_001_val_1.fq     
+-rwx------ 1 selkassas sg-envbio-mgr 1.2M Oct 20 21:51 WHOI010-V9_S94_L001_R2_001_val_2.fq     
+-rwx------ 1 selkassas sg-envbio-mgr 1.2M Oct 20 21:51 WHOI010-V9_S94_L001_R1_001_val_1.fq     
 
 -quality stats for 18s are very bad. Running through trim-galore again with a -q score of 25. 
 NOTE: I tried with different length and quality cutoffs (—length 60 and -length 80 and with -q scores of 25 and 30) but did not see much of an improvement with the data. Left on default and continued with the pipeline
 
-Classifying 18S by first merged forward and reverse reads using fq2fa then using mothur classify.seqs
-————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+### Classifying 18S by first merged forward and reverse reads using fq2fa then using mothur classify.seqs
+—————————————————————————————————————————————————————————————\
 Programs used: fq2fa 1.1.3, mothur 1.46.1
 
 Got the Protist Ribosomal Reference db v 4.14.0 from https://github.com/pr2database/pr2database/releases/tag/4.14.0
@@ -1148,8 +1180,8 @@ conda install -c bioconda mothur
 git clone git@github.com:loneknightpy/idba.git
 ```
 
-First, merge forward and reverse reads and convert to fasta using fq2fa 
-Script name in GitHub: fq2fa_18S.sh
+First, merge forward and reverse reads and convert to fasta using fq2fa   
+***Script name in GitHub:***  fq2fa_18S.sh
 ```
 srun -p scavenger --time=04:00:00 --ntasks-per-node 2 --pty bash 
 #40m
@@ -1170,8 +1202,8 @@ conda activate mothur_1.46.1
 conda install -c bioconda mothur
 ```
 
-Prepping the classify.seqs script:
-Script name in GitHub: mothur_18S.txt
+Prepping the classify.seqs script:   
+***Script name in GitHub:***  mothur_18S.txt
 ```
 nano mothur_18S.txt
 #paste what’s below
@@ -1206,8 +1238,8 @@ classify.seqs(fasta=WHOI010_V9_S94_L001_380m_merged.fasta, count=WHOI010_V9_S94_
 #The taxonomy is the pr2 tax file formatted for mothur
 ```
 
-Slurm script
-Script name in GitHub: mothur_18S_SLURM.sh
+Slurm script   
+***Script name in GitHub:***  mothur_18S_SLURM.sh
 ```
 nano mothur_18S_SLURM.sh
 
@@ -1236,9 +1268,9 @@ mothur mothur_18S.txt
 sbatch mothur.sh
 ```
 
-Subsampling 2,500 18S sequences using shuf in bash then head
-————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
-subsampling 2,500 18S sequences
+### Subsampling 2,500 18S sequences using shuf in bash then head
+—————————————————————————————————————————————————————————————\
+subsampling 2,500 18S sequences in bash
 ```
 shuf WHOI021_V9_S105_L001_40m_merged.0_SSU_mothur.wang.taxonomy | head -n 2500 > WHOI021_V9_S105_L001_40m_18S_taxonomy_2500_subsampled
 shuf WHOI040_V9_S124_L001_70m_merged.0_SSU_mothur.wang.taxonomy | head -n 2500 > WHOI040_V9_S124_L001_70m_18S_taxonomy_2500_subsampled
@@ -1246,11 +1278,21 @@ shuf WHOI010_V9_S94_L001_380m_merged.0_SSU_mothur.wang.taxonomy | head -n 2500 >
 ```
 
 
-18S relative abundance stacked bar plot figure creation
-————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+### 18S relative abundance stacked bar plot figure creation
+—————————————————————————————————————————————————————————————\
 Processing subsampled tax files to prep for plotting
-Script name in GitHub: 18S_processing_and_plot.R
 
+convert files to csv in bash
+```
+#40m
+mv WHOI021_V9_S105_L001_40m_18S_taxonomy_2500_subsampled WHOI021_V9_S105_L001_40m_18S_taxonomy_2500_subsampled.csv"
+#70m
+mv WHOI040_V9_S124_L001_70m_18S_taxonomy_2500_subsampled WHOI040_V9_S124_L001_70m_18S_taxonomy_2500_subsampled.csv
+#380m
+mv WHOI010_V9_S94_L001_380m_18S_taxonomy_2500_subsampled WHOI010_V9_S94_L001_380m_18S_taxonomy_2500_subsampled.csv
+```
+
+***Script name in GitHub:*** 18S_processing_and_plot.R
 ```
 library(tidyverse)
 library(reshape2) 
@@ -1275,8 +1317,9 @@ write.csv(good_70m, "/Users/sabrinaelkassas/Desktop/WHOI040_V9_S124_L001_70m_18S
 write.csv(good_380m, "/Users/sabrinaelkassas/Desktop/WHOI010_V9_S94_L001_380m_18S_taxonomy_2500_subsampled.NEW.csv")
 ```
 
-Generating the tax_table - Did this on Poseidon
-Script name in GitHub: 18S_rRNA-tax-loop.R
+Generating the tax_table - Did this on Poseidon   
+***Script name in GitHub:*** 18S_rRNA-tax-loop.R
+```
 #for loop to import rRNA read taxonomy assignments —> copied this to an .R file and then ran on the hpc with the slurm parameters below it. 
 #Credits: Sarah Hu
 ##12/01/21 18S rRNA for dino_METZYME Project 
@@ -1331,8 +1374,8 @@ for(a in taxa_raw){
 write.csv(tax_table, file  = "output-tax-table_18S.csv")
 ```
 
-To submit the script to the cluster to generate the count table, used the following SLURM script: 
-Script name in GitHub: count_table_SLURM.sh
+To submit the script to the cluster to generate the count table, used the following SLURM script:    
+***Script name in GitHub:*** count_table_SLURM.sh
 ```
 #!/bin/bash
 #SBATCH --partition=compute                  # Queue selection
@@ -1353,8 +1396,8 @@ source activate R_environment
 Rscript 18S_rRNA-tax-loop.R 
 ```
 
-To be done in RStudio: 
-Script name in GitHub: 18S_processing_and_plot.R
+To be done in RStudio:    
+***Script name in GitHub:***  18S_processing_and_plot.R
 ```
 #PLOTTING
 station_9_tax_table <- read.delim("/Users/sabrinaelkassas/Desktop/output-tax-table_18S_normalized.txt", header = TRUE, sep = "\t")
@@ -1370,8 +1413,9 @@ ggplot(station_9_tax_table, aes(x = Sample, y = Percent, fill = Class)) +
   geom_bar(stat = "identity", width = 0.5) + theme(axis.text.x.bottom = element_text(angle = 45)) + scale_fill_manual(values=col_vector)
 ```
 
-Preparing eukaryotic taxonomy for eukaryotic transcript counts figure
-————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+### Preparing eukaryotic taxonomy for eukaryotic transcript counts figure
+—————————————————————————————————————————————————————————————\
+Done in bash
 ```
 grep Chlorophyta dino_metzyme_annotated_coassembly_diamond_out_taxonomy.tsv > transcripts_chlorophyta.tsv
 grep Cryptophyta dino_metzyme_annotated_coassembly_diamond_out_taxonomy.tsv > transcripts_crytophyta.tsv
@@ -1396,8 +1440,8 @@ grep -vE ‘Bacteria|Archaea|Virus Other_eukaryota.tsv > transcripts_other_eukar
 #The -v flag selects everything but the query
 ```
 
-Eukaryotic transcript counts figure code
-————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+### Eukaryotic transcript counts figure code
+—————————————————————————————————————————————————————————————\
 This was done in Python. See directions below. 
 ```
 Run `conda activate python_jupyter`
