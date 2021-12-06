@@ -609,31 +609,6 @@ awk 'BEGIN {n_seq=0;} /^>/ {if(n_seq%1500000==0){file=sprintf("dino_metzyme_anno
 Submit by adding .faa file to the online web form at https://www.kegg.jp/ghostkoala/ and enter email address
 
 Once completed (took up to 12 hours), download 3 files (user_ko.txt, user_ko_definition.txt, user.out.top.gz) to local computer and scp back to Vortex.
-
-Script name in GitHub: generate_KEGG_orthology.txt
-```
-#!/bin/bash
-
-# Taken from Meren Lab's handy tutorial
-# https://merenlab.org/2018/01/17/importing-ghostkoala-annotations/
-
-# turns hierarchical .keg file into tab-delimited file where each row is a gene with different columsn describing layers of classification
-
-cd /vortexfs1/omics/env-bio/collaboration/dinoflagellates_METZYME/databases/KEGG
-
-wget 'https://www.genome.jp/kegg-bin/download_htext?htext=ko00001&format=htext&filedir=' -O ko00001.keg
-
-kegfile="ko00001.keg"
-
-while read -r prefix content
-do
-    case "$prefix" in A) col1="$content";; \
-                      B) col2="$content" ;; \
-                      C) col3="$content";; \
-                      D) echo -e "$col1\t$col2\t$col3\t$content";;
-    esac 
-done < <(sed '/^[#!+]/d;s/<[^>]*>//g;s/^./& /' < "$kegfile") > KO_Orthology_ko00001.txt
-```
  
 Recombine into one file with commands similar to the following:
 
