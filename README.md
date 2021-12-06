@@ -14,10 +14,10 @@ located under Biosample accession numbers: SAMN12331629–SAMN12331670
 18S reads:https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA555787
 located under Biosample accession numbers:  SAMN12332710–SAMN12332751
 
-Metatranscriptome processing
+# Metatranscriptome processing
 
 Merging forward and reverse MetaT reads then Removing rRNA reads from MetaT with SortMeRNA 4.2.0
-————————————————————————————————————————————————————————————————————————————————————————————————
+————————————————————————————————————————————————————————————————
 Programs: SortMeRNA 4.2.0
 
 Metatranscriptome QC - did not QC this data; all are fasta (.fna) files
