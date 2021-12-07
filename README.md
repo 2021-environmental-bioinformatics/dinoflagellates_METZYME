@@ -4,15 +4,85 @@ We chose the paper “Dinoflagellates alter their carbon and nutrient metabolic 
 
 Cohen, Natalie R., Matthew R. McIlvin, Dawn M. Moran, Noelle A. Held, Jaclyn K. Saunders, Nicholas J. Hawco, Michael Brosnahan et al. "Dinoflagellates alter their carbon and nutrient metabolic strategies across environmental gradients in the central Pacific Ocean." Nature Microbiology 6, no. 2 (2021): 173-186.
 
+## File structure
+```
+.
+├── data
+│   ├── 16S_reads
+│   │   ├── raw_16S
+│   │   └── trimmed_16S
+│   │       ├── kraken_taxonomy
+│   │       │   ├── 16S_plastids_removed
+│   │       │   │   └── 6000_subsampled
+│   │       │   ├── count_tables_for_rel_abund_figure
+│   │       │   ├── kreports
+│   │       │   │   └── 6000_subsampled
+│   │       │   └── plastid_accession_numbers
+│   │       ├── merged_fasta
+│   │       └── plastids_mothur
+│   │           └── subsampled_plastids
+│   ├── 18S_OTU_tables
+│   ├── 18S_reads
+│   │   ├── raw_18S
+│   │   └── trimmed_18S
+│   │       ├── merged_fasta_files
+│   │       └── mothur_18S_taxonomy
+│   └── metaT_trimmed_reads
+│       └── fasta_files
+│           ├── paired
+│           │   ├── mRNA
+│           │   │   ├── annotated_mRNA_files
+│           │   │   ├── bwa_mem_nucleotide_files
+│           │   │   ├── bwa_mem_translated_files
+│           │   │   ├── diamond_output
+│           │   │   ├── dino_metzyme_annotated_coassembly
+│           │   │   ├── eukaryota_transcripts
+│           │   │   ├── hmmer_genes_of_interest
+│           │   │   ├── hmmer_output
+│           │   │   ├── KEGG_annotation
+│           │   │   ├── metaT_coassembly
+│           │   │   └── whole_community_transcripts
+│           │   ├── rRNA
+│           │   └── trimmed
+│           └── unpaired
+├── databases
+│   ├── dinoREFdb
+│   ├── KEGG
+│   ├── KOG
+│   ├── MMETSP
+│   ├── Pfam
+│   ├── PhyloDB
+│   ├── Protist_Ribosomal_reference_db_18S
+│   └── silva111
+├── documentation
+├── envs
+├── jupyter-notebooks
+├── logs
+│   ├── 16S_logs
+│   ├── 18S_logs
+│   ├── failed_logs
+│   └── metaT_logs
+├── output
+│   ├── 16S_qc_trim_results
+│   └── 18S_qc_trim_results
+├── scripts
+│   ├── 16S_scripts
+│   ├── 18S_scripts
+│   └── metaT_scripts
+└── software
+    ├── fasta36
+    ├── FragGeneScan1.31
+```
+
 ## Data availability
 —————————————————————————————————————————————————————————————\
 The data is available at the following links:
 
-Metatranscriptomic reads: https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA555787
-16S reads: https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA555787
-located under Biosample accession numbers: SAMN12331629–SAMN12331670 
-18S reads:https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA555787
-located under Biosample accession numbers:  SAMN12332710–SAMN12332751
+**Metatranscriptomic reads:** https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA555787   
+**16S reads:** https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA555787   
+located under Biosample accession numbers: SAMN12331629–SAMN12331670    
+**18S reads:** https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA555787   
+located under Biosample accession numbers:  SAMN12332710–SAMN12332751   
 
 # Metatranscriptome processing
 
